@@ -5,17 +5,19 @@
 // or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
 //
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
+// compiled file.
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
+//= require .//jquery.min.js
+//= require_tree
 
-var idx = Math.floor((new Date().getHours()));
-var body = document.getElementsByTagName("body")[0];
-body.className = "heaven-" + idx;
 
